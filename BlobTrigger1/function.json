@@ -1,0 +1,18 @@
+﻿{
+  "bindings": [
+    {
+      "name": "InputBlob",
+      "path": "myblob/samples-workitems/{name}",
+      "connection": "storageaccounttestfab07_STORAGE",
+      "direction": "in",
+      "type": "blobTrigger"
+    },
+    {
+      "name": "outputBlob",
+      "path": "myblob/new-{name}",
+      "connection": "storageaccounttestfab07_STORAGE",
+      "direction": "out",
+      "type": "blob"
+    }
+  ]
+}
